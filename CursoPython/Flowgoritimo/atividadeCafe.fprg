@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 12:35:27 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjExOjQwOjE4ICI7MjU4MQ=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjEyOjM1OjI3ICI7MTsyNjk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="respCafe, respAgua" type="String" array="False" size=""/>
+            <output expression="&quot;============= Preparar o caf&#233; =============&quot;" newline="True"/>
+            <output expression="&quot;Tem Caf&#233;? (Digite: sim ou n&#227;o)&quot;" newline="True"/>
+            <input variable="respCafe"/>
+            <output expression="&quot;Tem &#193;gua? (Digite: sim ou n&#227;o)&quot;" newline="True"/>
+            <input variable="respAgua"/>
+            <if expression="respCafe = &quot;sim&quot;">
+                <then>
+                    <if expression="respAgua = &quot;sim&quot;">
+                        <then>
+                            <output expression="&quot;[A] Tem caf&#233; e tem &#225;gua -&gt; preparar caf&#233;&quot;" newline="True"/>
+                            <output expression="&quot;Colocar cafe no filtro&quot;" newline="True"/>
+                            <output expression="&quot;Colocar a &#225;gua em uma chaleira e ferver a &#225;gua&quot;" newline="True"/>
+                            <output expression="&quot;Colocar a&#231;ucar na &#225;gua quente&quot;" newline="True"/>
+                            <output expression="&quot;Colocar a &#225;gua quente no filtro com caf&#233;&quot;" newline="True"/>
+                            <output expression="&quot;Servir o caf&#233;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;[B] Tem caf&#233; mas n&#227;o tem &#225;gua -&gt; pegue a &#225;gua antes&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="respAgua = &quot;sim&quot;">
+                        <then>
+                            <output expression="&quot;[C] N&#227;o tem caf&#233;, mas tem &#225;gua -&gt; N&#227;o da para fazer caf&#233; (Sugest&#227;o: Ch&#225;)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;[D] N&#227;o tem cafe e nao tem agua -&gt; Adiquirir ambos antes de tentar fazer o cafe&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Fim do algoritmo&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

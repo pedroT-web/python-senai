@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-08 09:52:18 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjAzOjQ5OjM4ICI7MjU5Mw=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDg7IjA5OjUyOjE4ICI7MzsyNzA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, num4" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;=============== M&#233;dia entre 4 n&#250;meros inteiros ===============&quot;" newline="True"/>
+            <output expression="&quot;Escreva o 1&#176; n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Escreva o 2&#176; n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Escreva o 3&#176; n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="num3"/>
+            <output expression="&quot;Escreva o 4&#176; n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="num4"/>
+            <assign variable="media" expression="(num1 + num2 + num3 + num4) / 4"/>
+            <output expression="&quot;A m&#233;dia entre os n&#250;meros(&quot; &amp; num1 &amp; &quot; ,&quot; &amp; num2 &amp; &quot; ,&quot; &amp;  num3 &amp; &quot; ,&quot; &amp; num4 &amp; &quot;) &#233;: &quot;" newline="True"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

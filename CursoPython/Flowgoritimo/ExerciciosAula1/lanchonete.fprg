@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 04:54:40 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjQxOjEzICI7MjU3OQ=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjU0OjQwICI7MTsyNjkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;========================== Calculo Lanchonete ==========================&quot;" newline="True"/>
+            <declare name="hamburguer, cheeseburguer, fritas, refrigerante, milkshake, qtdHamburguer, qtdCheeseburguer, qtdFritas, qtdRefrigerantes, qtdMilkshake, contaFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a quantidade de Hamb&#250;rguer que foram comidos(ex: 0, 1, 2 ...): &quot;" newline="True"/>
+            <input variable="qtdHamburguer"/>
+            <output expression="&quot;Digite a quantidade de Cheeseburguer que foram comidos(ex: 0, 1, 2 ...): &quot;" newline="True"/>
+            <input variable="qtdCheeseburguer"/>
+            <output expression="&quot;Digite a quantidade de Fritas que foram comidos(ex: 0, 1, 2 ...): &quot;" newline="True"/>
+            <input variable="qtdFritas"/>
+            <output expression="&quot;Digite a quantidade de Refrigerante que foram comidos(ex: 0, 1, 2 ...): &quot;" newline="True"/>
+            <input variable="qtdRefrigerantes"/>
+            <output expression="&quot;Digite a quantidade de Milkshake que foram comidos(ex: 0, 1, 2 ...): &quot;" newline="True"/>
+            <input variable="qtdMilkshake"/>
+            <assign variable="hamburguer" expression="qtdHamburguer * 15"/>
+            <assign variable="cheeseburguer" expression="qtdCheeseburguer * 18"/>
+            <assign variable="fritas" expression="qtdFritas * 8.5"/>
+            <assign variable="refrigerante" expression="qtdRefrigerantes * 5.5"/>
+            <assign variable="milkshake" expression="qtdMilkShake * 12.9"/>
+            <assign variable="contaFinal" expression="hamburguer + cheeseburguer + fritas + refrigerante + milkshake"/>
+            <output expression="&quot;A conta final &#233; de: R$ &quot; &amp; contaFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

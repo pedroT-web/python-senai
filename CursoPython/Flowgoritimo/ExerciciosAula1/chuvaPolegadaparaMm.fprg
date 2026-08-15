@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 04:29:14 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjI0OjMwICI7MjU3OQ=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjI5OjE0ICI7MTsyNjk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;===================== Quantidade de chuva =====================&quot;" newline="True"/>
+            <declare name="chuvaPolegada, chuvaMm" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva a quantidade de chuva em polegada: &quot;" newline="True"/>
+            <input variable="chuvaPolegada"/>
+            <assign variable="chuvaMm" expression="chuvaPolegada * 25.4"/>
+            <output expression="&quot;A quantidade de chuva em &quot; &amp; chuvaPolegada &amp; &quot; polegadas equivale a uma chuva de &quot; &amp; chuvaMm &amp; &quot;mm&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

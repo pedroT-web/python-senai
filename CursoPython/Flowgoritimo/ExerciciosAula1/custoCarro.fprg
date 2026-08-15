@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 04:40:40 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjMzOjQxICI7MjU4MQ=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjQwOjQwICI7MTsyNjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;===================== Imposto sobre carro =====================&quot;" newline="True"/>
+            <declare name="custoCarro, precoFinal, imposto, porcentagemDistribuidor" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite qual o custo de f&#225;brica do carro: &quot;" newline="True"/>
+            <input variable="custoCarro"/>
+            <assign variable="porcentagemDistribuidor" expression="custoCarro * 0.12"/>
+            <assign variable="imposto" expression="custoCarro * 0.45"/>
+            <assign variable="precoFinal" expression="custoCarro + imposto + porcentagemDistribuidor"/>
+            <output expression="&quot;Com todos os custos e impostos, o valor final do carro &#233; : R$ &quot; &amp; precoFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

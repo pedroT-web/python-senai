@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 02:52:29 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjAyOjI2OjIzICI7MjU4MQ=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjAyOjUyOjI5ICI7MTsyNjk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <declare name="nome, titulo" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225;, qual seu nome? &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual a sua idade? &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Bem vindo! &quot; &amp; nome" newline="True"/>
+            <if expression="idade &gt;= 16">
+                <then>
+                    <output expression="&quot;Voc&#234; j&#225; possui o t&#237;tulo de leitor? (Digite sim ou n&#227;o)&quot;" newline="True"/>
+                    <input variable="titulo"/>
+                    <if expression="titulo = &quot;sim&quot;">
+                        <then>
+                            <output expression="&quot;Diriga-se a uma urna eletr&#244;nica e vote&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Va buscar seu t&#237;tulo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Volte para casa!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

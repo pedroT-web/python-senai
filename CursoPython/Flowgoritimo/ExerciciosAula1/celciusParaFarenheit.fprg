@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-08 10:04:32 "/>
+        <attribute name="created" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDE7IjA0OjIwOjExICI7MjU3NA=="/>
+        <attribute name="edited" value="QWx1bm87RUNGUDUxMk4xMjYyODM3OzIwMjYtMDgtMDg7IjEwOjA0OjMyICI7MjsyNjky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius, farenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;================ Convers&#227;o de Celcius para Farenheit ================&quot;" newline="True"/>
+            <output expression="&quot;Digite a temperatura atual de celcius para convers&#227;o: &quot;" newline="True"/>
+            <input variable="celcius"/>
+            <assign variable="farenheit" expression="(9/5)*celcius + 32"/>
+            <output expression="celcius &amp; &quot;&#176; graus celcius &#233; igual a &quot; &amp; farenheit &amp; &quot; Farenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
