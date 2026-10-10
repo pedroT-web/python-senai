@@ -1,0 +1,10 @@
+# --- Microsoft Foundry / Azure OpenAI ---
+# Necessario para usar OpenAI(...).responses.create(...)
+openai>=1.68.0
+
+# --- Azure AI Language / Text Analytics ---
+azure-ai-textanalytics>=5.3.0
+azure-core>=1.30.0
+
+# --- Utilitarios de gerenciamento de ambiente ---
+python-dotenv>=1.0.0
